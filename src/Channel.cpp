@@ -208,7 +208,7 @@ Channel::Channel(const std::string &host, int port, const std::string &username,
 }
 #else
 Channel::Channel(const std::string &, int, const std::string &,
-                 const std::string &, const std::string &, int, int
+                 const std::string &, const std::string &, int, int,
                  const SSLConnectionParams &) {
   throw std::logic_error(
       "SSL support has not been compiled into SimpleAmqpClient");
